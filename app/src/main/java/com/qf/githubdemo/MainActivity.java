@@ -12,11 +12,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView tv = new TextView(this);
     }
 
-    public void openOther(View view){
+    public void openOther(View view) {
         Intent intent = new Intent();
-        intent.setClass(this,SecondActivity.class);
-        startActivityForResult(intent,100);
+        intent.setClass(this, SecondActivity.class);
+        startActivityForResult(intent, 300);
     }
 }
