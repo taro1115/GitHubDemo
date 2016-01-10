@@ -17,6 +17,6 @@ public class MainActivity extends AppCompatActivity {
     public void openOther(View view){
         Intent intent = new Intent();
         intent.setClass(this,SecondActivity.class);
-        startActivityForResult(intent,100);
+        startActivity(intent);
     }
 }
